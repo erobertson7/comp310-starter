@@ -4,9 +4,10 @@
 int main(int argc, char *argv[]){
     int nums[] = {2,4,6,8};
     int sum = 0;
-    for(int i = 0; i < 4; i++)
+    int size = sizeof(nums)/sizeof(nums[0]);
+    for(int i = 0; i < size; i++)
     {
         sum += nums[i];
     }
-    printf("Average: %d\n",sum/4);
+    printf("Average: %d\n",(int)sum/size);
 }
